@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --primary-color: #171717;
+    --secondary-color: #444444;
+    --accent-color: #1886cf;
+    --complimentary-color: #c8ccd0;
+    --white-color: #eeeeee;
+    --black-color: #181818;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: 700;
+    background-color: var(--primary-color)
+    /* overflow: hidden; */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+header .navbar-light {
+    transition: all 0.5s;
+    font-family: Ubuntu;
+  }
+  /* @media screen and (max-width: 767px) {
+    header .navbar-light {
+      background-color: #171717;
+    } */
+
+  /* } */
+  header .navbar-light .navbar-brand {
+    max-width: 150px;
+  }
+  @media screen and (max-width: 767px) {
+    header .navbar-light .navbar-brand {
+      max-width: 100px;
+    }
+  }
+  header .navbar-light .navbar-brand.xs {
+    max-width: 100px;
+  }
+  header .navbar-light .navbar-nav {
+    justify-content: flex-end;
+    width: 100%;
+  }
+  header .navbar-light .navbar-nav .nav-link {
+    text-decoration: none;
+    color: var(--complimentary-color);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0rem 0.75rem;
+  }
+  header .navbar-light .navbar-nav .nav-link:hover {
+    color: #1886cf;
+  }
+
+h1, p{
+    color: var(--complimentary-color);
+    text-align: auto
+}
+
+.accent{
+    color: var(--accent-color);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    /* padding: 10rem 2rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 10rem;
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 767px) {
+  .flex-container{
+    padding-left: 0rem;
+    margin-top: 5rem;
+  }
+}
+
+.main-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2em;
+}
+
+.wip {
+  width: 100%;
+}
+
+.main-content h1{
+    font-size: 3.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8em;
+}
+
+.main-content p{
+    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-bottom: 0.7em;
+}
+
+.main-content a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    display: flex;
+    align-self: flex-start;
+    padding: 0.5rem 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+
+.canvas-element{
+    width: 50%;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  padding-top: 7.5rem;
+  max-width: 100%;
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .text {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .webgl {
+    height: 20rem;
+  }
+}
+
+.navbar-nav {
+  flex-direction:row;
+}
+
+.nav-item {
+  margin: 2rem;
+}
+
+.cv {
+width: 100vw;
+text-align: right;
+margin-right: 10rem;
+margin-bottom: 5rem;
+}
+
+.cvLink {
+  color: black;
+  font-size: 1.8rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  border: 0.4rem solid white;
+  padding: 1.5rem 1rem;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 1rem;  
+}
+
+.cvLink:hover {
+  background-color: #171717;
+  text-decoration: none;
+  color: white;
+  font-weight: 400
+}
+
+@media screen and (max-width: 767px) {
+  .cv {
+    text-align: left;
+    margin: auto;
+    padding: 0rem 1rem 3rem 1rem;
+  }
+  .cvLink {
+    font-size: 1.5rem;
+    padding: 1rem 0.75rem;
+  }
+}
+
+.colorNavbar {
+  background-color: #171717
+}
+
+header .navbar-light {
+  transition: all 0.5s;
+}
+@media screen and (max-width: 767px) {
+  header .navbar-light {
+    background-color: #171717;
+  }
+}
+header .navbar-light .navbar-brand {
+  max-width: 150px;
+}
+@media screen and (max-width: 767px) {
+  header .navbar-light .navbar-brand {
+    max-width: 100px;
+  }
+}
+header .navbar-light .navbar-brand.xs {
+  max-width: 100px;
+}
+header .navbar-light .navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+.navbar-nav {
+  flex-direction: column;
+  line-height: 0;
+}
+}
+
+header .navbar-light .navbar-nav .nav-link {
+  text-decoration: none;
+  color: #C8CCD0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.5rem 0.75rem;
+}
+header .navbar-light .navbar-nav .nav-link:hover {
+  color: #3A84AC;
+}
+
+.navbar-toggler{
+  margin: 1rem;
+  background-color: #9e9e9e;
+}
+
+@media screen and (max-width: 767px) {
+  .text {
+    text-align: center;
+  }
+}
+
+.bg-light {
+  background-color: #171717!important
+}
+
+.wip .workinprogress {
+  margin-top: 7rem;
+  font-size: 1.2rem;
+  color: white
+}
